@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Medtech</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <!-- SweetAlert2 CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
+
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <div class="logo-circle"><div class="logo-cross"></div></div>
+        Medtech
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="caed.html">cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="favorites.html">favorite</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+        </ul>
+      </div>
+      <a href="tel:+12345678" class="btn btn-contact ms-auto">+1 234 56 78</a>
+    </div>
+  </nav>
+
+  <section class="header-contact">
+    <h1>Contact Us</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </section>
+
+  <section class="contact-info-top">
+    <h2>Make Schedule Easier and Simpler for Patients</h2>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-5 col-lg-4">
+          <div class="contact-card" role="region" aria-label="Email contact info">
+            <svg
+              class="contact-icon-email"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="#f48026"
+              viewBox="0 0 64 64"
+              aria-hidden="true"
+            >
+              <path d="M8 16h48v32H8z"></path>
+              <polyline points="8,16 32,36 56,16"></polyline>
+            </svg>
+            <div class="content">
+              <strong>Email</strong>
+              <small>support@medtech.com<br />help@medtech.com</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="contact-card" role="region" aria-label="Location contact info">
+            <svg
+              class="contact-icon-location"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="#f48026"
+              viewBox="0 0 64 64"
+              aria-hidden="true"
+            >
+              <path d="M32 56s16-16.5 16-28-7.163-12-16-12-16 5.346-16 12 16 28 16 28z"></path>
+              <circle cx="32" cy="24" r="7"></circle>
+            </svg>
+            <div class="content">
+              <strong>Location</strong>
+              <small>121 King Street Melbourne,<br />3000, Australia</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-5 col-lg-4">
+          <div class="contact-card" role="region" aria-label="Attendance contact phone numbers">
+            <svg
+              class="contact-icon-phone"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="#f48026"
+              viewBox="0 0 64 64"
+              aria-hidden="true"
+            >
+              <rect x="14" y="12" width="36" height="36" rx="4" ry="4"></rect>
+              <line x1="32" y1="24" x2="32" y2="44"></line>
+              <line x1="20" y1="40" x2="44" y2="40"></line>
+            </svg>
+            <div class="content">
+              <strong>Attendance</strong>
+              <small>+123 45 678 901<br />+234 56 789 012</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="contact-card" role="region" aria-label="Working hours information">
+            <svg
+              class="contact-icon-clock"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="#f48026"
+              viewBox="0 0 64 64"
+              aria-hidden="true"
+            >
+              <circle cx="32" cy="32" r="28"></circle>
+              <polyline points="32 16 32 32 44 32"></polyline>
+              <circle cx="48" cy="48" r="8" fill="none" stroke="#f48026"></circle>
+              <text x="46" y="52" font-size="12" fill="#f48026" font-weight="bold" font-family="Arial, sans-serif">24</text>
+            </svg>
+            <div class="content">
+              <strong>Working Hours</strong>
+              <small>Monday - Friday: 8AM - 9PM<br />Weekends: Closed</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-form-section">
+    <h3>Contact Our Friendly Reception Staff with any Enquiry</h3>
+    <div class="container">
+      <form id="contactForm" novalidate>
+        <div class="row form-row">
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Your Name"
+              required
+              aria-label="Your Name"
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Your Email"
+              required
+              aria-label="Your Email"
+            />
+          </div>
+        </div>
+        <div class="row form-row">
+          <div class="col-md-6">
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              placeholder="Phone"
+              aria-label="Phone"
+            />
+          </div>
+          <div class="col-md-6">
+            <select class="form-control" id="subject" aria-label="Subject">
+              <option value="" selected disabled>Subject</option>
+              <option value="appointment">Appointment</option>
+              <option value="general">General Enquiry</option>
+              <option value="support">Support</option>
+            </select>
+          </div>
+        </div>
+        <div class="row form-row">
+          <div class="col-12">
+            <textarea
+              class="form-control"
+              id="message"
+              placeholder="Message"
+              aria-label="Message"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <div class="row form-row">
+          <div class="col-12 text-center">
+            <button type="submit" class="btn-submit" aria-label="Send Message">
+              Send Message
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="newsletter-section" aria-label="Subscribe to our newsletter">
+    <h4>Subscribe to our Newsletter</h4>
+    <form class="newsletter-input-group" onsubmit="event.preventDefault(); subscribeNewsletter();">
+      <input
+        type="email"
+        placeholder="Enter Your Email:"
+        aria-label="Enter Your Email for Newsletter"
+        id="newsletterEmail"
+        required
+      />
+      <button type="submit" aria-label="Subscribe to Newsletter">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#fff"
+          viewBox="0 0 24 24"
+          width="22"
+          height="22"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path d="M3 12l18-12v24z"></path>
+        </svg>
+      </button>
+    </form>
+  </section>
+
+  <div class="sponsor-logos container" role="region" aria-label="Sponsor logos slider">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4ecfc736-eeed-4018-83e3-bb58433f2f02.png"
+            alt="Craft logo with simple modern black text style"
+            onerror="this.style.display='none'"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/37d67113-4172-4c9c-b516-d788c0229725.png"
+            alt="Minimum logo in minimal black font on white background"
+            onerror="this.style.display='none'"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f85ce092-c9df-44f6-9a3a-1ab262d050b5.png"
+            alt="Hype logo in elegant cursive grey font on white background"
+            onerror="this.style.display='none'"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/99bca9b9-13a4-40e6-9dd1-46439f4282f7.png"
+            alt="Power XR2 Module logo in futuristic font black on white background"
+            onerror="this.style.display='none'"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2f761095-7cd4-4a54-b3a2-fb807e96674b.png"
+            alt="Generic logo text in classic serif font"
+            onerror="this.style.display='none'"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b7288a74-b03e-4573-9da7-e004a573fa12.png"
+            alt="Hyper Best award winner logo clean typography"
+            onerror="this.style.display='none'"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo-desc" role="region" aria-label="Medtech description">
+        <h5 aria-label="Company name Medtech">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="#f48026"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M16 12h-4v4" />
+          </svg>
+          Medtech
+        </h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempororem ipsum dolor sit am econsect ametconsectetetur adipiscing.
+        </p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="#" aria-label="Facebook" tabindex="0" ><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M22 12a10 10 0 1 0-11.5 9.87v-7h-2v-3h2v-2c0-1.6.95-2.5 2.4-2.5.7 0 1.5.1 1.5.1v2h-1c-1 0-1.3.6-1.3 1.2v1.7h2.5l-.4 3h-2v7A10 10 0 0 0 22 12z"/></svg></a>
+          <a href="#" aria-label="Twitter" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M23 3a10.9 10.9 0 0 1-3.14.86 5.48 5.48 0 0 0 2.4-3.02 10.93 10.93 0 0 1-3.48 1.33 5.44 5.44 0 0 0-9.29 4.95A15.4 15.4 0 0 1 1.64 2.15a5.44 5.44 0 0 0 1.68 7.26 5.38 5.38 0 0 1-2.46-.67v.07a5.43 5.43 0 0 0 4.37 5.33 5.49 5.49 0 0 1-2.45.09 5.44 5.44 0 0 0 5.07 3.77A10.91 10.91 0 0 1 1 19.54a15.3 15.3 0 0 0 8.29 2.42c9.95 0 15.4-8.25 15.4-15.4v-.7A11 11 0 0 0 23 3z"/></svg></a>
+          <a href="#" aria-label="LinkedIn" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M20 0H4a4 4 0 0 0-4 4v16a4 4 0 0 0 4 4h16a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zM8 19H5v-9h3zm-1.5-10.71a1.75 1.75 0 1 1 1.75-1.74 1.75 1.75 0 0 1-1.75 1.74zm13.5 10.71h-3v-4.7c0-1.17-.42-1.96-1.47-1.96a1.58 1.58 0 0 0-1.48 1 2 2 0 0 0-.11.7v4.96h-3s.04-8 0-9h3v1.28a3 3 0 0 1 2.72-1.5c2 0 3.5 1.3 3.5 4.1z"/></svg></a>
+          <a href="#" aria-label="YouTube" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M23.5 6.2a2.77 2.77 0 0 0-1.95-2A29.29 29.29 0 0 0 12 4a29.19 29.19 0 0 0-9.49.18 2.76 2.76 0 0 0-1.94 2.06A29.27 29.27 0 0 0 1 12a29.22 29.22 0 0 0 .53 5.8 2.75 2.75 0 0 0 1.95 2 29.15 29.15 0 0 0 9.49.18 29.3 29.3 0 0 0 9.49-.18 2.75 2.75 0 0 0 1.94-2.06 29.22 29.22 0 0 0 .53-5.8 29.24 29.24 0 0 0-.53-5.8zM10 15V9l6 3-6 3z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-links" role="navigation" aria-label="Important and Support links">
+        <div>
+          <h6>Important Link</h6>
+          <ul>
+            <li><a href="#">Appointment</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Specialities</a></li>
+            <li><a href="#">Neurology</a></li>
+            <li><a href="#">Oncology</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6>Support</h6>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Knowledge Base</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">Partnerships</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h6>Get in Touch</h6>
+          <ul>
+            <li><strong>Email:</strong> info@medtech.com</li>
+            <li><strong>Phone:</strong> +1 234 567 89 0 0</li>
+            <li><strong>Fax:</strong> +1 (987) 654 321 9 9</li>
+            <li><strong>Address:</strong> King Street Melbourne, 3000, Australia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2022 medtech.com All Rights Reserved</span>
+      <div class="footer-payment-logos" aria-label="Payment methods">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/eb65bc04-16de-41ed-b84b-d097b0eafbd3.png"
+          alt="Visa payment method logo"
+          onerror="this.style.display='none'"
+        />
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4f9eddd6-f88d-4c40-9b6e-c35f438c5624.png"
+          alt="Mastercard payment method logo"
+          onerror="this.style.display='none'"
+        />
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7d85a276-abca-431e-83cc-17d2d10270ff.png"
+          alt="American Express payment method logo"
+          onerror="this.style.display='none'"
+        />
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/416a59d7-83d0-4efe-8392-6b86b1db87e4.png"
+          alt="Paypal payment method logo"
+          onerror="this.style.display='none'"
+        />
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script>
+    // Initialize Swiper for Sponsors Logos
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 2800,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        576: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        992: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
+    });
+
+    // Simple newsletter subscription simulation
+    function subscribeNewsletter() {
+      const emailInput = document.getElementById('newsletterEmail');
+      const email = emailInput.value.trim();
+      if (
+        email &&
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+      ) {
+        alert('Thank you for subscribing with email: ' + email);
+        emailInput.value = '';
+      } else {
+        alert('Please enter a valid email address.');
+        emailInput.focus();
+      }
+    }
+
+    // Contact form validation and submission simulation
+   const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  if (!contactForm.name.value.trim()) {
+    Swal.fire({
+      icon: 'warning',
+      title: 'Oops...',
+      text: 'Please enter your name.',
+    });
+    contactForm.name.focus();
+    return;
+  }
+
+  if (!contactForm.email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contactForm.email.value.trim())) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Invalid Email',
+      text: 'Please enter a valid email address.',
+    });
+    contactForm.email.focus();
+    return;
+  }
+
+  if (!contactForm.message.value.trim()) {
+    Swal.fire({
+      icon: 'info',
+      title: 'Message Required',
+      text: 'Please enter your message.',
+    });
+    contactForm.message.focus();
+    return;
+  }
+
+  // Success Message
+  Swal.fire({
+    icon: 'success',
+    title: 'Message Sent!',
+    text: 'Thank you for contacting us. We will get back to you soon.',
+  });
+
+  contactForm.reset();
+  Swal.fire({
+  icon: 'success',
+  title: 'Message Sent!',
+  text: 'Thank you for contacting us. We will get back to you soon.',
+  confirmButtonText: 'Home Page',
+  showCancelButton: true,
+  cancelButtonText: 'Make Appoinment',
+}).then((result) => {
+  if (result.isConfirmed) {
+    // مثلاً يروح للرئيسية
+    window.location.href = 'home.html';
+  } else if (result.dismiss === Swal.DismissReason.cancel) {
+    // أو يروح لصفحة الحجز
+    window.location.href = 'appointment.html';
+  }
+});
+
+});
+
+  </script>
+</body>
+</html>

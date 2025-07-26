@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <div class="logo-circle"><div class="logo-cross"></div></div>
+        Medtech
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="caed.html">cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="favorites.html">favorite</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+        </ul>
+      </div>
+      <a href="tel:+12345678" class="btn btn-contact ms-auto">+1 234 56 78</a>
+    </div>
+  </nav>
+
+    <section class="cart-container text-center">
+        <h2 data-aos="fade-down">Your Cart</h2>
+
+        <div id="cart-list" class="mt-4 cart-list"></div>
+
+        <div class="total-price-wrapper text-end my-4 d-none">
+            <span id="total-price" class="total-price">Total: $0.00</span>
+        </div>
+
+        <div class="no-cart">
+            
+            <p class="empty-text">Your cart is currently empty.</p>
+            <a href="service.html" class="btn btn-back-services">Browse Services</a>
+        </div>
+
+        <div id="clear-btn-wrapper" class="mt-4 d-none">
+            <button class="btn btn-danger clear-btn">Clear All</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer>
+    <div class="footer-top">
+      <div class="footer-logo-desc" role="region" aria-label="Medtech description">
+        <h5 aria-label="Company name Medtech">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="#f48026"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M16 12h-4v4" />
+          </svg>
+          Medtech
+        </h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempororem ipsum dolor sit am econsect ametconsectetetur adipiscing.
+        </p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="#" aria-label="Facebook" tabindex="0" ><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M22 12a10 10 0 1 0-11.5 9.87v-7h-2v-3h2v-2c0-1.6.95-2.5 2.4-2.5.7 0 1.5.1 1.5.1v2h-1c-1 0-1.3.6-1.3 1.2v1.7h2.5l-.4 3h-2v7A10 10 0 0 0 22 12z"/></svg></a>
+          <a href="#" aria-label="Twitter" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M23 3a10.9 10.9 0 0 1-3.14.86 5.48 5.48 0 0 0 2.4-3.02 10.93 10.93 0 0 1-3.48 1.33 5.44 5.44 0 0 0-9.29 4.95A15.4 15.4 0 0 1 1.64 2.15a5.44 5.44 0 0 0 1.68 7.26 5.38 5.38 0 0 1-2.46-.67v.07a5.43 5.43 0 0 0 4.37 5.33 5.49 5.49 0 0 1-2.45.09 5.44 5.44 0 0 0 5.07 3.77A10.91 10.91 0 0 1 1 19.54a15.3 15.3 0 0 0 8.29 2.42c9.95 0 15.4-8.25 15.4-15.4v-.7A11 11 0 0 0 23 3z"/></svg></a>
+          <a href="#" aria-label="LinkedIn" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M20 0H4a4 4 0 0 0-4 4v16a4 4 0 0 0 4 4h16a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zM8 19H5v-9h3zm-1.5-10.71a1.75 1.75 0 1 1 1.75-1.74 1.75 1.75 0 0 1-1.75 1.74zm13.5 10.71h-3v-4.7c0-1.17-.42-1.96-1.47-1.96a1.58 1.58 0 0 0-1.48 1 2 2 0 0 0-.11.7v4.96h-3s.04-8 0-9h3v1.28a3 3 0 0 1 2.72-1.5c2 0 3.5 1.3 3.5 4.1z"/></svg></a>
+          <a href="#" aria-label="YouTube" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M23.5 6.2a2.77 2.77 0 0 0-1.95-2A29.29 29.29 0 0 0 12 4a29.19 29.19 0 0 0-9.49.18 2.76 2.76 0 0 0-1.94 2.06A29.27 29.27 0 0 0 1 12a29.22 29.22 0 0 0 .53 5.8 2.75 2.75 0 0 0 1.95 2 29.15 29.15 0 0 0 9.49.18 29.3 29.3 0 0 0 9.49-.18 2.75 2.75 0 0 0 1.94-2.06 29.22 29.22 0 0 0 .53-5.8 29.24 29.24 0 0 0-.53-5.8zM10 15V9l6 3-6 3z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-links" role="navigation" aria-label="Important and Support links">
+        <div>
+          <h6>Important Link</h6>
+          <ul>
+            <li><a href="#">Appointment</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Specialities</a></li>
+            <li><a href="#">Neurology</a></li>
+            <li><a href="#">Oncology</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6>Support</h6>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Knowledge Base</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">Partnerships</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h6>Get in Touch</h6>
+          <ul>
+            <li><strong>Email:</strong> info@medtech.com</li>
+            <li><strong>Phone:</strong> +1 234 567 89 0 0</li>
+            <li><strong>Fax:</strong> +1 (987) 654 321 9 9</li>
+            <li><strong>Address:</strong> King Street Melbourne, 3000, Australia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2022 medtech.com All Rights Reserved</span>
+      <div class="footer-payment-logos" aria-label="Payment methods">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/eb65bc04-16de-41ed-b84b-d097b0eafbd3.png"
+          alt="Visa payment method logo"
+          onerror="this.style.display='none'"
+        />
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4f9eddd6-f88d-4c40-9b6e-c35f438c5624.png"
+          alt="Mastercard payment method logo"
+          onerror="this.style.display='none'"
+        />
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7d85a276-abca-431e-83cc-17d2d10270ff.png"
+          alt="American Express payment method logo"
+          onerror="this.style.display='none'"
+        />
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/416a59d7-83d0-4efe-8392-6b86b1db87e4.png"
+          alt="Paypal payment method logo"
+          onerror="this.style.display='none'"
+        />
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const cartList = document.getElementById('cart-list');
+        const noCart = document.querySelector('.no-cart');
+        const clearBtnWrapper = document.getElementById('clear-btn-wrapper');
+        const totalPriceSpan = document.getElementById('total-price');
+        const totalPriceWrapper = document.querySelector('.total-price-wrapper');
+
+        let servicesData = [];
+
+        fetch('https://edu-me01.github.io/Json-Data/Hospital.json')
+            .then(response => response.json())
+            .then(data => {
+                servicesData = data.services;
+                loadCart();
+            })
+            .catch(error => console.error('Error fetching services:', error));
+
+        function loadCart() {
+    cartList.innerHTML = '';
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    if (cart.length === 0) {
+        noCart.style.display = 'block';
+        clearBtnWrapper.classList.add('d-none');
+        return;
+    }
+
+    noCart.style.display = 'none';
+    clearBtnWrapper.classList.remove('d-none');
+
+    cart.forEach(item => {
+        const serviceData = servicesData.find(service => service.serviceName === item.name);
+        const price = serviceData ? parseFloat(serviceData.price) : 0;
+
+        const div = document.createElement('div');
+        div.className = 'cart-item';
+        div.setAttribute('data-aos', 'fade-up');
+        div.innerHTML = `
+            <img src="${item.img}" alt="${item.name}">
+            <div class="info">
+                <h4>${item.name}</h4>
+                <p>${item.description}</p>
+                <p class="text-teal"><strong>Price:</strong> $${price.toFixed(2)}</p>
+                <button class="btn btn-remove">Remove</button>
+            </div>
+        `;
+        div.querySelector('.btn-remove').addEventListener('click', () => {
+            removeFromCart(item.name);
+        });
+        cartList.appendChild(div);
+    });
+
+    AOS.refresh();
+}
+
+        function removeFromCart(name) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart = cart.filter(item => item.name !== name);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            Swal.fire({
+                icon: 'success',
+                title: 'Removed from Cart!',
+                showConfirmButton: false,
+                timer: 1300
+            });
+            loadCart();
+        }
+
+        document.querySelector('.clear-btn').addEventListener('click', () => {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "This will remove all items from your cart.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#53d5f9;',
+                cancelButtonColor: '#53d5f9;',
+                confirmButtonText: 'Yes, clear all'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    localStorage.removeItem('cart');
+                    loadCart();
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Cart Cleared!',
+                        showConfirmButton: false,
+                        timer: 1300
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
