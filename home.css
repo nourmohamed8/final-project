@@ -5,7 +5,10 @@
         --gray-text: #888a99;
         --white: #fff;
         --btn-radius: 30px;
-        --font-family: 'Poppins', sans-serif;}
+        --font-family: 'Poppins', sans-serif;
+        --green-primary: #0c1a45;    
+        --orange-btn: #00baff;   
+    }
 
         body {
         background-color: var(--dark-blue);
