@@ -472,10 +472,10 @@ contactForm.addEventListener('submit', function (e) {
 }).then((result) => {
   if (result.isConfirmed) {
     // مثلاً يروح للرئيسية
-    window.location.href = 'home.html';
+    window.location.href = 'index.html';
   } else if (result.dismiss === Swal.DismissReason.cancel) {
     // أو يروح لصفحة الحجز
-    window.location.href = 'appointment.html';
+    window.location.href = 'index.html';
   }
 });
 
